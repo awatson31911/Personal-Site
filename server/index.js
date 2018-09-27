@@ -29,3 +29,12 @@ app.use(function(err, req ,res, next) {
 })
 
 /* ------------------------------ ~ Start Server ~ ------------------------------------------- */
+app.listen(port, function() {
+  console.log("Knock, Knock");
+  setTimeout(function() {
+    console.log("Who's there?")
+  });
+  setTimeout(function() {
+    console.log("...We're listening.....")
+  });
+})
