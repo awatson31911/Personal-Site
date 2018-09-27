@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 /* --------------- Routing ------------------- */
-app.use('/api', require('./routes'));
+//app.use('/api', require('./routes'));
 
 /* ------------------------------ Default index.html ------------------------------------------- */
 app.get('*', function (req, res) {
@@ -35,6 +35,6 @@ app.listen(port, function() {
     console.log("Who's there?")
   });
   setTimeout(function() {
-    console.log("...We're listening.....")
+    console.log("...We're listening.... ")
   });
 })
