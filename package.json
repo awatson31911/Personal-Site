@@ -2,10 +2,9 @@
   "name": "portfolio_site",
   "version": "1.0.0",
   "description": "An elegantly designed personal site to host projects and misison statement",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "nodemon server/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack -w & nodemon --watch server -e js,html"
   },
   "repository": {
     "type": "git",
@@ -17,9 +16,28 @@
     "url": "https://github.com/awatson31911/Personal-Site/issues"
   },
   "homepage": "https://github.com/awatson31911/Personal-Site#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.4",
     "body-parser": "^1.18.3",
+    "css-loader": "^1.0.0",
+    "express": "^4.16.4",
     "morgan": "^1.9.1",
-    "volleyball": "^1.5.1"
+    "style-loader": "^0.23.1",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "redux": "^3.6.0"
   }
 }

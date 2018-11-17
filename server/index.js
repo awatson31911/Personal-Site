@@ -16,15 +16,22 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+/* --------------- Static ------------------- */
+app.use(express.static(path.join(__dirname, '..', 'node_modules'))); // serves node_modules
+app.use(express.static(path.join(__dirname, '..', 'dist'))); //serves webpack bundle.js
+app.use(express.static(path.join(__dirname, '..', 'client'))); //serves css/js files
+
 /* --------------- Routing ------------------- */
 //app.use('/api', require('./routes'));
 
+
 /* ------------------------------ Default index.html ------------------------------------------- */
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, './client/views/index.html'));
+  res.sendFile(path.join(__dirname, '../client/public/views/index.html'));
+
 });
 
-/* ------------------------------ Error Handling ------------------------------------------- */
+/* ----------------------------------- Error Handling ------------------------------------------- */
 app.use(function(err, req ,res, next) {
   console.error(err);
   console.error(err.stack);
@@ -38,6 +45,7 @@ app.listen(port, function() {
     console.log("Who's there?")
   }, 1000);
   setTimeout(function() {
-    console.log("...We're \n        listening.... ")
+    console.log(`...We're
+    listening.... `)
   }, 3000);
 })
