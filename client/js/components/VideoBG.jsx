@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const VideoBG = ({ ...props }) => {
-  console.log(props)
+const VideoBG = () => {
+
   return (
 
-    <div className="card-two-imgs">
+    <div className="video-background">
       
     </div>
   )
