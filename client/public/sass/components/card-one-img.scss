@@ -1,0 +1,14 @@
+.card-one-img {
+  margin-bottom: 5rem;
+  box-shadow: inset 0rem 0rem 1rem 0rem black;
+  padding: 2rem;
+  width: 85%;
+  position: relative;
+
+  &__photo {
+    width: 100%;
+    border-radius: .2rem;
+    z-index: 5;
+  }
+  
+}
