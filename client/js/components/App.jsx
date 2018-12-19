@@ -46,9 +46,8 @@ export default class App extends Component {
           <VideoBG />
         </section>
 
-        <section id="side-nav"> 
-          <SideNavigation />
-        </section>
+        <SideNavigation />
+
 
       </div>
     )
