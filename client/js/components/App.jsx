@@ -34,6 +34,8 @@ export default class App extends Component {
 
         <Header />
         
+        <SideNavigation />
+        
         <section id="projects">
           <ProjectCard projects={this.state.projects} selectedProject={this.state.selectedProject} />
         </section>
@@ -46,7 +48,6 @@ export default class App extends Component {
           <VideoBG />
         </section>
 
-        <SideNavigation />
 
 
       </div>

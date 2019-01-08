@@ -1,22 +1,28 @@
 .main-navigation  {
+  display: inline-block;
   position: fixed;
-  width: 100vw;
   top: 0;
   left: 0;
   font-size: 1.8rem;
+  z-index: 1;
 
   .main-navigation__list {
     display: inline-block;
     border: .2rem;
-    padding: 1rem;
+    padding: 2rem 0 2rem 0;
     letter-spacing: .1rem;
     background-color: $primary-color;
     color: $color-black;
-
+    
+    
     [class*="__list-"] {
-
-      &:not(:last-child) {
-        margin-right: $gutter-horizontal;
+      padding: 2rem;
+      transition: background-color 200ms linear, color 250ms linear;
+      
+      &:last-child {
+        transform: rotate(-35deg);
+        padding: unset;
+        display: inline-block;
       }
 
       &:link
@@ -24,8 +30,14 @@
         text-transform: uppercase;
         text-decoration: none;
         color: $color-black;
-    
+        
       }
+      
+      &:hover {
+        background-color: $color-black;
+        color: $primary-color;
+      }
+
     }
   }
 }
