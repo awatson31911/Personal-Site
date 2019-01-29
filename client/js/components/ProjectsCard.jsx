@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const ProjectCard = ({ projects, selectedProject, ...props }) => {
-  console.log(props)
+
   return (
 
     <div className="card-two-imgs">

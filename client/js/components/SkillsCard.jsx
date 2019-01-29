@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SkillsCard = ({ skills, selectedSkill, ...props }) => {
-  console.log(skills, selectedSkill)
+  
   return (
     <div className="card-one-img">
       <div className="row">
