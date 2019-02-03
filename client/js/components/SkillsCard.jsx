@@ -1,42 +1,56 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const SkillsCard = ({ skills, selectedSkill, ...props }) => {
-  
-  return (
-    <div className="card-one-img">
-      <div className="row">
-        <div className="col-1-of-4">
-          <ul className="list-of-things">
-            {
-              skills.map((skill) => {
-                return (
-                  <li key={skill.name} className="list-of-things__thing" alt={skill.name}>
-                    {skill.name}
-                  </li>
-                )
-              })
-            }
-          </ul>
-        </div>
+export default class SkillsCard extends Component {
 
-        <div className="col-3-of-4">
-          <div className="row">
-            <div className="col-1-of-2">
-              <img className="card-one-img__photo" src={selectedSkill.logoURL} alt={`${selectedSkill.name} logo`} />
-            </div>
-            <div className="col-1-of-2">
-              <div className="card-one-img__text">
-                {selectedSkill.description}
+  constructor({ skills, selectedSkill, ...props }) {
+    super()
+    this.state = {
+      skills,
+      selectedSkill
+    }
+  }
+
+  render() {
+    let state = this.state
+    
+    return (
+      <div className="card-one-img">
+        <div className="row">
+          <div className="col-1-of-4">
+            <ul className="list-of-things list-items">
+              {
+                state.skills.map((skill) => {
+                  return (
+                    <li key={skill.name} className="list-of-things__thing" alt={skill.name}>
+                      {skill.name}
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
+
+          <div className="col-3-of-4">
+            <div className="card-one-img__img-box">
+              <div className="row">
+                <div className="col-1-of-2">
+                  <img className="card-one-img__photo" src={state.selectedSkill.logoURL} alt={`${state.selectedSkill.name} logo`} />
+                </div>
+                <div className="col-1-of-2">
+                  <div className="card-one-img__text">
+                    {state.selectedSkill.description}
+                  </div>
+                  <br />
+                  {state.selectedSkill.exposure}
+                </div>
               </div>
-              <br />
-              {selectedSkill.exposure}
             </div>
           </div>
         </div>
-      </div>
 
-    </div>
-  )
+      </div>
+    )
+  }
+
 }
 
-export default SkillsCard;
