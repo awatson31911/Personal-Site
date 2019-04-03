@@ -17,12 +17,16 @@ export default class SkillsCard extends Component {
       <div className="card-one-img">
         <div className="row">
           <div className="col-1-of-4">
-            <ul className="list-of-things list-items">
+            <ul className="list-of-things list-items paragraph">
               {
-                state.skills.map((skill) => {
+                Object.keys(state.skills).map( (skillId) => {
                   return (
-                    <li key={skill.name} className="list-of-things__thing" alt={skill.name}>
-                      {skill.name}
+                    <li key={state.skills[skillId].name} value={skillId} className="list-of-things__thing" alt={state.skills[skillId].name} onClick={
+                      (e) => {
+                        this.setState( {selectedSkill: state.skills[e.target.value] })
+                      }
+                    }>
+                      {state.skills[skillId].name}
                     </li>
                   )
                 })
@@ -37,7 +41,7 @@ export default class SkillsCard extends Component {
                   <img className="card-one-img__photo" src={state.selectedSkill.logoURL} alt={`${state.selectedSkill.name} logo`} />
                 </div>
                 <div className="col-1-of-2">
-                  <div className="card-one-img__text">
+                  <div className="card-one-img__text paragraph">
                     {state.selectedSkill.description}
                   </div>
                   <br />

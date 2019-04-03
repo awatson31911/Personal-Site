@@ -17,7 +17,7 @@ export default class App extends Component {
       projects,
       skills,
       roles,
-      selectedProject: projects[0],
+      selectedProject: projects[1],
       selectedSkill: skills[2],
       selectedRole: {}
     }
