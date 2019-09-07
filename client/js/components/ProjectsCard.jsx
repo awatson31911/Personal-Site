@@ -12,8 +12,8 @@ export default class ProjectCard extends Component {
   }
 
   componentDidMount() {
-    document.getElementsByClassName('card-two-imgs__photo')[0].style.padding = '0'
-      // document.getElementsByClassName('card-two-imgs__photo')[0].onMouseEnter(()=>{
+    // document.getElementsByClassName('card-two-imgs__photo')[0].style.padding = '0'
+    // document.getElementsByClassName('card-two-imgs__photo')[0].onMouseEnter(()=>{
 
     //   document.getElementsByClassName('card-two-imgs__photo')[0].style.padding = '8rem'
     // })
@@ -31,25 +31,24 @@ export default class ProjectCard extends Component {
         <div className='row'>
           <div className="col-3-of-4">
             <div className="card-two-imgs__img-box">
-              <div className="row">
-                <div className="col-1-of-2">
-                  <div className="UTILITY-CLASS-FOR-MAC-STENCIL" alt="Macbook Computer">
-                    <img src={state.selectedProject.pics[0]} alt="Website Snapshot" className="card-two-imgs__photo card-two-imgs__photo--1" />
-                  </div>
-                </div>
-                <div className="col-1-of-2">
-                  <div className="paragraph">{state.selectedProject.description}</div>
-                </div>
+
+              <div>
+                <img src={state.selectedProject.pics[0]} alt="Website Snapshot" className="card-two-imgs__photo-1" />
               </div>
 
-              <div className="row">
-                <div className="col-1-of-2">
-                  <h1 className="heading-primary align-text__bottom">{state.selectedProject.name}</h1>
-                </div>
-                <div className="col-1-of-2">
-                  <img src={state.selectedProject.pics[1]} alt="Website Snapshot" className="card-two-imgs__photo card-two-imgs__photo--2" />
-                </div>
+              <div>
+                <img src={state.selectedProject.pics[1]} alt="Website Snapshot" className="card-two-imgs__photo-2" />
               </div>
+
+              <div>
+                <img src={state.selectedProject.pics[2]} alt="Website Snapshot" className="card-two-imgs__photo-3" />
+              </div>
+
+              <div className="card-two-imgs__img-box">{state.selectedProject.description}</div>
+              
+              <br />
+              
+              <hr />
             </div>
           </div>
 
@@ -70,8 +69,8 @@ export default class ProjectCard extends Component {
             </ul>
           </div>
 
-        </div>
-      </div>
+        </div >
+      </div >
     )
   }
 }

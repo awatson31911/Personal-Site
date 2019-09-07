@@ -3,19 +3,43 @@
   width: 95%;
   transition: all 2s;
 
-  
   &__img-box {
     box-shadow: inset 0px 0px 4px 0px $color-black;
-    padding: 2rem;
-    
+    position: relative;
+    height: 60rem;
   }
-  
-  &__photo {
-    width: 100%;
-    border-radius: .2rem;
 
-    // &:hover {
-    //   padding: 0;
-    // }
+  &__photo-1 {
+    top: 25%;
+    right: 5%;
+    width: 80%;
+    height: 35rem;
+    border-radius: 0.2rem;
+    position: absolute;
   }
+
+  &__photo-2 {
+    top: 30%;
+    right: 10%;
+    width: 80%;
+    height: 35rem;
+    border-radius: 0.2rem;
+    position: absolute;
+  }
+
+  &__photo-3 {
+    top: 35%;
+    right: 15%;
+    width: 80%;
+    height: 35rem;
+    border-radius: 0.2rem;
+    position: absolute;
+  }
+
+  br {
+    width: 60%; 
+  }
+  // &:hover {
+  //   padding: 0;
+  // }
 }
