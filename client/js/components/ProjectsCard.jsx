@@ -44,7 +44,7 @@ export default class ProjectCard extends Component {
                 <img src={state.selectedProject.pics[2]} alt="Website Snapshot" className="card-two-imgs__photo-3" />
               </div>
 
-              <div className="card-two-imgs__img-box">{state.selectedProject.description}</div>
+              <div className="card-two-imgs__descript">{state.selectedProject.description}</div>
               
               <br />
               
@@ -53,12 +53,13 @@ export default class ProjectCard extends Component {
           </div>
 
           <div className="col-1-of-4">
+            <div className="card-two-imgs__list">
 
-            <ul className="list-of-things list-items">
+            <ul>
               {
                 Object.keys(state.projects).map((projectId) => {
                   return (
-                    <li key={state.projects[projectId].name + state.projects[projectId].id} value={projectId} className="list-of-things__thing" alt={state.projects[projectId].name} onClick={
+                    <li key={state.projects[projectId].name + state.projects[projectId].id} value={projectId} className="" alt={state.projects[projectId].name} onClick={
                       (e) => { this.setState({ selectedProject: state.projects[e.target.value] }) }
                     }>
                       {state.projects[projectId].name}
@@ -67,6 +68,7 @@ export default class ProjectCard extends Component {
                 })
               }
             </ul>
+              </div>
           </div>
 
         </div >

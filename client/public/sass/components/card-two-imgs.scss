@@ -1,12 +1,36 @@
 .card-two-imgs {
   // margin-bottom: 5rem;
-  width: 95%;
-  transition: all 2s;
-
+  width: 100%;
+  background-color: $primary-color-dark;
+  border-top-style: solid;
+  border-top-width: thick;
+  
+  &__descript {
+    text-align: center;
+    padding: 0 5%;
+    padding-top: 2%;
+  }
+  
   &__img-box {
-    box-shadow: inset 0px 0px 4px 0px $color-black;
-    position: relative;
     height: 60rem;
+    position: relative;
+    border-right-style: inset;
+    border-right-width: medium;
+  }
+  
+  &__list {
+    height: 60rem;
+    position: relative;
+
+    ul {
+      height: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 3rem;
+    }
+
   }
 
   &__photo-1 {
@@ -37,9 +61,6 @@
   }
 
   br {
-    width: 60%; 
+    width: 60%;
   }
-  // &:hover {
-  //   padding: 0;
-  // }
 }

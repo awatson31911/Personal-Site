@@ -86,7 +86,7 @@ export const skills = {1: react, 2: redux, 3: express, 4: d3, 5: node, 6: reactN
 
 /* --------------- Project -------------- */
 const scribblingShrink = {
-  name: 'scribbling shrink',
+  name: 'The Scribbling Shrink',
   id: 0,
   description: 'A WordPress blog site to host poems',
   skills: ['HTML', 'CSS', 'Javascript', 'Wordpress'],
@@ -105,7 +105,7 @@ const atomizer = {
 }
 
 const moduleCleaner = {
-  name: 'module-cleaner',
+  name: 'Module-Cleaner',
   id: 2,
   description: 'A npm package to recursively delete any unused node_modules from project directories.',
   skills: ['node', 'Javascript'],
