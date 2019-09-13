@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header';
+import NavBar from './NavBar';
 import ProjectCard from './ProjectsCard';
 import SkillsCard from './SkillsCard';
 import VideoBG from './VideoBG';
@@ -17,7 +17,7 @@ export default class App extends Component {
       projects,
       skills,
       roles,
-      selectedProject: projects[1],
+      selectedProject: projects[0],
       selectedSkill: skills[2],
       selectedRole: {}
     }
@@ -28,23 +28,23 @@ export default class App extends Component {
     return (
       <div>
 
-        <Header />
+        {/* <NavBar /> */}
         
-        <SideNavigation />
+        {/* <SideNavigation /> */}
         
+        <section id="skills" style={{
+          backgroundImage: 'linear-gradient(to bottom right,#bcdff3, #7c9daf, transparent), url(../public/img/dorian-mongel-554993-unsplash.jpg)'
+        }}>
+          <SkillsCard skills={this.state.skills} selectedSkill={this.state.selectedSkill}/>
+        </section>
+
         <section id="projects">
           <ProjectCard projects={this.state.projects} selectedProject={this.state.selectedProject} />
         </section>
 
-        <section id="skills">
-          <SkillsCard skills={this.state.skills} selectedSkill={this.state.selectedSkill}/>
-        </section>
-
-        <section id="playground">
+        {/* <section id="playground">
           <VideoBG />
-        </section>
-
-
+        </section> */}
 
       </div>
     )

@@ -87,21 +87,21 @@ export const skills = {1: react, 2: redux, 3: express, 4: d3, 5: node, 6: reactN
 /* --------------- Project -------------- */
 const scribblingShrink = {
   name: 'The Scribbling Shrink',
-  id: 0,
+  id: 1,
   description: 'A WordPress blog site to host poems',
   skills: ['HTML', 'CSS', 'Javascript', 'Wordpress'],
   codeLink: 'https://github.com/awatson31911/scribbling-shrink',
-  pics: ['../public/img/scribb-shrink-3.gif', '../public/img/scribb-shrink-1.jpg', '../public/img/scribb-shrink-2.jpg']
+  pics: [{id: 0, url: '../public/img/scribb-shrink-3.gif'}, {id: 1, url: '../public/img/scribb-shrink-1.jpg'}, {id: 2, url: '../public/img/scribb-shrink-2.jpg'}]
 }
 
 const atomizer = {
   name: 'Atomizer',
-  id: 1,
+  id: 0,
   description: 'A web application that displays an expansive and interactive representation of the related topics to a user-provided keyword, via a web-crawl of the keyword’s Wikipedia Page.',
   skills: ['react', 'redux', 'express', 'd3', 'node', 'HTML', 'CSS',],
   codeLink: 'https://github.com/AtomizeThis/atomizer',
   liveLink: 'http://atomize.live',
-  pics: ['../public/img/atomizer-1.jpg','../public/img/atomizer-2.jpg', '']
+  pics: [{id: 0, url: '../public/img/atomizer-1.jpg'},{id: 1, url: '../public/img/atomizer-2.jpg'}, '']
 }
 
 const moduleCleaner = {
@@ -111,7 +111,7 @@ const moduleCleaner = {
   skills: ['node', 'Javascript'],
   codeLink: 'https://github.com/awatson31911/module-cleaner',
   liveLink: 'https://www.npmjs.com/package/module-cleaner',
-  pics: ['../public/img/module-cleaner-3.gif','../public/img/module-cleaner-1.png', '../public/img/module-cleaner-2.jpg']
+  pics: [{id: 0, url:'../public/img/module-cleaner-3.gif'},{id: 1, url:'../public/img/module-cleaner-1.png'}, {id: 2, url:'../public/img/module-cleaner-2.jpg'}]
 }
 
 const sabers = {
@@ -121,7 +121,7 @@ const sabers = {
   skills: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Webpack', 'node'],
   codeLink: 'https://github.com/awatson31911/sabers-on-servers',
   liveLink: 'sabers-on-servers.herokuapp.com',
-  pics: ['../public/img/sabers-3.gif', '../public/img/sabers-1.jpg', '../public/img/sabers-2.jpg' ]
+  pics: [{id: 0, url: '../public/img/sabers-3.gif'}, {id: 1, url: '../public/img/sabers-1.jpg'}, {id: 2, url: '../public/img/sabers-2.jpg'} ]
 }
 
 // const uoAffinityTracker = {
@@ -146,8 +146,8 @@ const okMakeIt = {
 }
 
 export const projects = {
-  [scribblingShrink.id]: scribblingShrink,
   [atomizer.id]: atomizer,
+  [scribblingShrink.id]: scribblingShrink,
   [moduleCleaner.id]: moduleCleaner,
   [sabers.id]: sabers
 }

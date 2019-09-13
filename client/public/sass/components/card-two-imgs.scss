@@ -1,38 +1,31 @@
 .card-two-imgs {
   // margin-bottom: 5rem;
   width: 100%;
-  background-color: $primary-color-dark;
+  background-color: $primary-color;
   border-top-style: solid;
   border-top-width: thick;
-  
+
   &__descript {
     text-align: center;
-    padding: 0 5%;
+    padding: 2% 5% 0 5%;
     padding-top: 2%;
   }
-  
+
   &__img-box {
     height: 60rem;
     position: relative;
     border-right-style: inset;
     border-right-width: medium;
   }
-  
-  &__list {
-    height: 60rem;
-    position: relative;
 
-    ul {
-      height: 100%;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      font-size: 3rem;
-    }
-
+  [class*="__photo-"] {
+    // opacity: 0.5;
+    background-size: cover;
+    background-position: top;
+    transition: 200ms linear;
+    cursor: pointer;
   }
-
+  
   &__photo-1 {
     top: 25%;
     right: 5%;
@@ -41,7 +34,7 @@
     border-radius: 0.2rem;
     position: absolute;
   }
-
+  
   &__photo-2 {
     top: 30%;
     right: 10%;
@@ -50,7 +43,7 @@
     border-radius: 0.2rem;
     position: absolute;
   }
-
+  
   &__photo-3 {
     top: 35%;
     right: 15%;
@@ -58,6 +51,35 @@
     height: 35rem;
     border-radius: 0.2rem;
     position: absolute;
+  }
+  
+  &__list {
+    height: 60rem;
+    position: relative;
+    
+    ul {
+      height: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 2.4rem;
+    }
+    
+    li {
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 200ms linear;
+
+      &:hover {
+        background-color: $color-black;
+        color: $color-white;
+        font-size: 2.65rem
+      }
+    }
   }
 
   br {
