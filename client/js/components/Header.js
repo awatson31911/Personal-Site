@@ -13,16 +13,15 @@ const Header = () => {
         </video>
       </div>
 
-      <h1 className="header-primary">
-        <span className="header-primary__heading">Hello, I&apos;m</span>
+      <div className="header-primary">
+        <h1 className="header-primary__heading">Hello, I&apos;m</h1>
         <br/>
         <br/>
-        <span className="header-primary__name">ANTHONY WATSON</span>
+        <h1 className="header-primary__name">ANTHONY WATSON</h1>
         <br/>
-        <span className="header-primary__info">Software, Engineer</span>
-        <br/>
-        <span className="header-primary__info">NYC</span>
-      </h1>
+        <p className="header-primary__info">Software, Engineer</p>
+        <p className="header-primary__info">NYC</p>
+      </div>
 
     </header>
   )

@@ -25,10 +25,9 @@
     position: absolute;
     text-align: center;
     top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 15%;
     box-shadow: 3px 5px 8px 0px #07070761;
-    background-color: #f1e8e8;
+    background-color: #f1e8e89c;
     border-radius: 1px;
 
     .header-primary__heading {
@@ -36,8 +35,10 @@
       display: inline-block;
       width: 100%;
       text-align: center;
-      letter-spacing: 7px;
       border-radius: 2px;
+      padding: 6px;
+      text-transform: uppercase;  
+  
     }
     .header-primary__info {
       font-size: 1.5rem;

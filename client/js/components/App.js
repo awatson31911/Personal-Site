@@ -30,16 +30,16 @@ export default class App extends Component {
     return (
       <div>
 
+        <NavBar />
         <Header />
-        {/* <NavBar /> */}
         
         {/* <SideNavigation /> */}
         
-        <section id="skills" style={{
+        {/* <section id="skills" style={{
           backgroundImage: 'linear-gradient(to bottom right,#bcdff3, #7c9daf, transparent), url(../public/img/dorian-mongel-554993-unsplash.jpg)'
         }}>
           <SkillsCard skills={this.state.skills} selectedSkill={this.state.selectedSkill}/>
-        </section>
+        </section> */}
 
         <section id="projects">
           <ProjectCard projects={this.state.projects} selectedProject={this.state.selectedProject} />

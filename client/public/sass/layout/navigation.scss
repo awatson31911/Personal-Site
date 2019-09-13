@@ -1,0 +1,114 @@
+.navigation {
+  &__checkbox {
+  }
+
+  &__button {
+    background-color: $color-white;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    z-index: 200;
+  }
+
+  &__background {
+    height: 6rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: url('../../public/img/kai-pilger-317256-unsplash.jpg');
+    z-index: 100;
+    transform: scale(10, 100) 
+  }
+
+  &__nav {
+    height: 100vh;
+    width: 20rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index:150;
+    list-style: none;
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+  }
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited{
+      display: inline-block;
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      color: $primary-color-dark;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(120deg, orange 0%, orange 50%, $color-white 50%);
+      background-size: 100%;
+    }
+
+    &:hover,
+    &:active {
+
+    }
+  }
+}
+
+// .main-navigation {
+//   display: inline-block;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   font-size: 1.8rem;
+//   z-index: 5;
+
+//   .main-navigation__list {
+//     display: inline-block;
+//     border: .2rem;
+//     padding: 1rem 0 1rem 0;
+//     letter-spacing: .1rem;
+//     background-color: $primary-color-dark;
+//     color: $color-black;
+
+//     [class*="__list--"] {
+//       padding: 1rem;
+//       transition: background-color 200ms linear, color 250ms linear;
+
+//       &:link
+//       ,:visited {
+//         text-transform: uppercase;
+//         text-decoration: none;
+//         color: $color-black;
+
+//       }
+
+//       &:hover {
+//         background-color: $color-black;
+//         color: $color-white;
+//       }
+
+//     }
+//   }
+//   #js-main-navigation__pull-out {
+//     display: inline-block;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     font-size: 1.8rem;
+//     z-index: 1;
+//   }
+
+// }
