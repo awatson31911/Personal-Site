@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import NavBar from './NavBar';
+import Header from './Header';
 import ProjectCard from './ProjectsCard';
 import SkillsCard from './SkillsCard';
 import VideoBG from './VideoBG';
@@ -28,6 +30,7 @@ export default class App extends Component {
     return (
       <div>
 
+        <Header />
         {/* <NavBar /> */}
         
         {/* <SideNavigation /> */}
