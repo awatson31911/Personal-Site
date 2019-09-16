@@ -35,10 +35,11 @@
       display: inline-block;
       width: 100%;
       text-align: center;
-      border-radius: 2px;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
       padding: 6px;
-      text-transform: uppercase;  
-  
+      text-transform: uppercase;
+      color: #e3dfdf;
     }
     .header-primary__info {
       font-size: 1.5rem;
