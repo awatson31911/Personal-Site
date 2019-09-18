@@ -17,9 +17,9 @@ const Header = () => {
         <h1 className="header-primary__heading">Hello, I&apos;m</h1>
         <br/>
         <br/>
-        <h1 className="header-primary__name">ANTHONY WATSON</h1>
+        <h1 className="header-primary__name">Anthony Watson</h1>
         <br/>
-        <p className="header-primary__info">Software, Engineer</p>
+        <p className="header-primary__info">Software Engineer</p>
         <p className="header-primary__info">NYC</p>
       </div>
 

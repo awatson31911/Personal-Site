@@ -13,9 +13,10 @@ body {
 
 section {
   height: 100vh;
+  padding-top: 6rem;
 
-  &:not(:last-child) {
-    padding-top: 10rem;
-    padding-left: 10rem;
-  }
+  // &:not(:last-child) {
+  //   padding-top: 10rem;
+  //   padding-left: 10rem;
+  // }
 }

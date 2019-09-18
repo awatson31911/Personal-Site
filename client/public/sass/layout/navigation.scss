@@ -9,8 +9,8 @@
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 4rem;
+    right: 4rem;
     z-index: 200;
     text-align: center;
   }
@@ -19,8 +19,8 @@
     height: 6rem;
     width: 3rem;
     position: fixed;
-    top: 6.5rem;
-    right: 8rem;
+    top: 4.5rem;
+    right: 6rem;
     z-index: 100;
     transition: transform 0.8s;
     background-color: #46555e;
@@ -29,8 +29,8 @@
   &__nav {
     height: 6rem;
     position: fixed;
-    top: 6.5rem;
-    right: 9.5rem;
+    top: 4.5rem;
+    right: 7.5rem;
     z-index: 150;
     list-style: none;
     opacity: 0;
@@ -80,11 +80,6 @@
   }
 
   &__checkbox:checked ~ &__nav {
-    opacity: 1;
-    width: 60rem;
-  }
-
-  &__checkbox:checked ~ &__nav &__{
     opacity: 1;
     width: 60rem;
   }

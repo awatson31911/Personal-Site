@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 import NavBar from './NavBar';
 import Header from './Header';
 import ProjectCard from './ProjectsCard';
-import SkillsCard from './SkillsCard';
-import VideoBG from './VideoBG';
-import SideNavigation from './SideNavigation';
+import About from './About';
+// import SkillsCard from './SkillsCard';
+// import VideoBG from './VideoBG';
+// import SideNavigation from './SideNavigation';
 
 
 import { projects, skills, roles } from '../utils/resumeObjects'
@@ -33,6 +34,14 @@ export default class App extends Component {
         <NavBar />
         <Header />
         
+        <section id="about">
+          <About  />
+        </section>
+
+        <section id="projects">
+          <ProjectCard projects={this.state.projects} selectedProject={this.state.selectedProject} />
+        </section>
+        
         {/* <SideNavigation /> */}
         
         {/* <section id="skills" style={{
@@ -40,10 +49,6 @@ export default class App extends Component {
         }}>
           <SkillsCard skills={this.state.skills} selectedSkill={this.state.selectedSkill}/>
         </section> */}
-
-        <section id="projects">
-          <ProjectCard projects={this.state.projects} selectedProject={this.state.selectedProject} />
-        </section>
 
         {/* <section id="playground">
           <VideoBG />

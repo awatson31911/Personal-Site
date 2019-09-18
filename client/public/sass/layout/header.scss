@@ -27,11 +27,11 @@
     top: 20%;
     left: 15%;
     box-shadow: 3px 5px 8px 0px #07070761;
-    background-color: #f1e8e89c;
-    border-radius: 1px;
+    background-color: #f1e8e8;
+    border-radius: 4px;
 
-    .header-primary__heading {
-      background-color: #b61212;
+    &__heading {
+      background-color: $primary-color;
       display: inline-block;
       width: 100%;
       text-align: center;
@@ -39,11 +39,18 @@
       border-top-left-radius: 4px;
       padding: 6px;
       text-transform: uppercase;
-      color: #e3dfdf;
+      color: #e9e7e7;
     }
-    .header-primary__info {
+
+    &__info {
       font-size: 1.5rem;
       letter-spacing: 2px;
     }
+
+    &__name {
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+
   }
 }
