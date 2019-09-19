@@ -14,29 +14,68 @@ const About = () => {
         </div>
       </div>
 
-      <div className="bio__pern-container">
-        <h1>P.E.R.N.</h1>
+      <div className="stack">
+        <h1>{'I mostly use the "P.E.R.N." Stack'}</h1>
 
         <br />
-        
-        <div className="bio__pern-item-container">
-          <div className="bio__pern-item"></div>
-          <div className="bio__pern-item"></div>
-          <div className="bio__pern-item"></div>
-          <div className="bio__pern-item"></div>
+
+        <div className="stack__card-container">
+          <div className="stack__card">
+            <div className="stack__icon-box">
+              <svg className="stack__icon">
+                <use xlinkHref="../../public/img/sprite.svg#icon-database"></use>
+              </svg>
+            </div>
+            <div className="stack__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+          </div>
+          <div className="stack__card">
+            <div className="stack__icon-box">
+              <svg className="stack__icon">
+                <use xlinkHref="../../public/img/sprite.svg#icon-drive1"></use>
+              </svg>
+
+            </div>
+            <div className="stack__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+          </div>
+          <div className="stack__card">
+            <div className="stack__icon-box">
+              <svg className="stack__icon">
+                <use xlinkHref="../../public/img/sprite.svg#icon-publish"></use>
+              </svg>
+
+            </div>
+            <div className="stack__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+
+          </div>
+          <div className="stack__card">
+            <div className="stack__icon-box">
+              <svg className="stack__icon">
+                <use xlinkHref="../../public/img/sprite.svg#icon-cogs"></use>
+              </svg>
+            </div>
+            <div className="stack__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </div>
+          </div>
         </div>
 
       </div>
 
-      <div className="bio__tech-container">
+      <div className="tech">
         <h1>Other Tech I have worked with:</h1>
-        <div className="bio__tech-item-container">
-          <div className="bio__tech-item"></div>
-          <div className="bio__tech-item"></div>
-          <div className="bio__tech-item"></div>
-          <div className="bio__tech-item"></div>
-          <div className="bio__tech-item"></div>
-          <div className="bio__tech-item"></div>
+        <div className="tech__item-container">
+          <div className="tech__item"></div>
+          <div className="tech__item"></div>
+          <div className="tech__item"></div>
+          <div className="tech__item"></div>
+          <div className="tech__item"></div>
+          <div className="tech__item"></div>
         </div>
       </div>
 

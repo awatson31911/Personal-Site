@@ -23,6 +23,12 @@ const Header = () => {
         <p className="header-primary__info">NYC</p>
       </div>
 
+      <div className="header__icon-box">
+        <svg className="header__icon">
+          <use xlinkHref="../../public/img/sprite.svg#icon-chevron-thin-down"></use>
+        </svg>
+      </div>
+
     </header>
   )
 }
