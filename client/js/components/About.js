@@ -9,13 +9,13 @@ const About = () => {
         </div>
         <div className="bio__text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Hello, my name is Tony! I&apos;m a full stack engineer based in New York City, NY, with a passion for building things to solve problems and empowering people through tech. Most recently, I deployed a package to NPM called <a href="https://www.npmjs.com/package/module-cleaner" target="_newtab">module-cleaner</a> (aka Filtch) which recursively removes all of the unwanted <b>node_modules</b> folders from a given project directory
           </p>
         </div>
       </div>
 
       <div className="stack">
-        <h1>{'I mostly use the "P.E.R.N." Stack'}</h1>
+        <h1 className="stack__heading">{'I work mostly with the "P.E.R.N." stack'}</h1>
 
         <br />
 
@@ -27,7 +27,7 @@ const About = () => {
               </svg>
             </div>
             <div className="stack__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              <b>P.</b>ostgreSQL database for storage
             </div>
           </div>
           <div className="stack__card">
@@ -38,7 +38,7 @@ const About = () => {
 
             </div>
             <div className="stack__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              <b>E.</b>xpress.js framework for server creation and routing
             </div>
           </div>
           <div className="stack__card">
@@ -49,7 +49,7 @@ const About = () => {
 
             </div>
             <div className="stack__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              <b>R.</b>eact.js library for rendering user interfaces to the DOM
             </div>
 
           </div>
@@ -60,7 +60,7 @@ const About = () => {
               </svg>
             </div>
             <div className="stack__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+              <b>N.</b>ode.js runtime environment to execute the code
             </div>
           </div>
         </div>
@@ -70,12 +70,31 @@ const About = () => {
       <div className="tech">
         <h1>Other Tech I have worked with:</h1>
         <div className="tech__item-container">
-          <div className="tech__item"></div>
-          <div className="tech__item"></div>
-          <div className="tech__item"></div>
-          <div className="tech__item"></div>
-          <div className="tech__item"></div>
-          <div className="tech__item"></div>
+          <div className="tech__item">
+            <img src="../../public/img/jquery_logo.png" alt="jQuery Logo" />
+          </div>
+          <div className="tech__item">
+            <img src="../../public/img/html_logo.png" alt="jQuery Logo" />
+          </div>
+          <div className="tech__item">
+            <img src="../../public/img/css_logo.png" alt="jQuery Logo" />
+          </div>
+          <div className="tech__item">
+            <img src="../../public/img/mssql_logo.png" alt="jQuery Logo" />
+          </div>
+          <div className="tech__item">
+            <img src="../../public/img/expo_logo.png" alt="jQuery Logo" />
+          </div>
+          <div className="tech__item">
+            <img src="../../public/img/react-native_logo.png" alt="jQuery Logo" />
+          </div>
+          <div className="tech__item">
+            <img src="../../public/img/webpack_logo.png" alt="jQuery Logo" />
+          </div>
+          <div className="tech__item">
+            <img src="../../public/img/redux_logo.png" alt="jQuery Logo" />
+          </div>
+
         </div>
       </div>
 

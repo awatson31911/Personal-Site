@@ -1,35 +1,52 @@
 .bio {
   height: 100%;
   text-align: center;
+  position: relative;
 
   &__content {
-    height: 33%;
-    background-color: $primary-color-dark;
+    height: 23%;
+    width: 70%;
+    background-color: #387497;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #bcdff3;
+    border-radius: 17%;
   }
 
   &__img {
     background-image: url("../img/bio-pic.jpg");
     height: 100%;
-    width: 23rem;
+    width: 17rem;
     background-size: cover;
     position: relative;
     border-radius: 50%;
     transition: 0.5s;
+
   }
 
   &__text {
     width: 70rem;
+    font-size: 1.8rem;
+
+    a:link, 
+    a:active,
+    a:visited {
+      text-decoration: none;
+      color: #ff7e99;
+    }
+    a:hover{
+      color: #ffabbc;
+    }
   }
 }
 
 .stack {
-  height: 50%;
+  height: 47%;
 
   &__heading {
-    margin-top: 1rem;
+    margin-top: 8rem;
+    font-weight: 300;
   }
 
   &__card-container {
@@ -84,19 +101,35 @@
 }
 
 .tech {
-  height: 17%;
-  background-color: $primary-color-dark;
+  height: 24%;
+  width: 47%;
+  position: absolute;
+  right: 0;
+  border-radius: 36%;
+  background-color: #387497;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #bcdff3;
+  font-weight: 300;
 
   &__item-container {
-    display: flex;
-    justify-content: space-around;
+    width: 81%;
+    margin-top: -5rem;
   }
 
   &__item {
     display: inline-block;
-    height: 8rem;
-    width: 8rem;
+    height: 4.5rem;
+    width: 4.5rem;
     border-radius: 50%;
-    box-shadow: 0px 0px 5px 3px #3e3e3e;
+    box-shadow: 0px 0px 4px 1px #3e3e3e;
+    margin-right: 2rem;
+
+    img {
+      height: inherit;
+    }
+    
   }
 }

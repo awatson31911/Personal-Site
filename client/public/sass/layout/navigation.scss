@@ -16,13 +16,13 @@
   }
 
   &__background {
-    height: 6rem;
-    width: 3rem;
+    height: 4rem;
+    width: 2rem;
     position: fixed;
-    top: 4.5rem;
+    top: 5.5rem;
     right: 6rem;
     z-index: 100;
-    transition: transform 0.8s;
+    transition: 0.3s cubic-bezier(0.38, 0.05, 0.48, 0.81);;
     background-color: #46555e;
   }
 
@@ -55,15 +55,13 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 2.5rem;
-      font-weight: 700;
       padding: 0 2rem;
-      color: #fffcd2;
+      color: #bcdff3;
       text-decoration: none;
       text-transform: uppercase;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fffcd2 50%);
       background-size: 225%;
-      transition: 0.6s;
+      transition: 0.3s;
     }
 
     &:hover,
@@ -76,12 +74,12 @@
 
   //FUNCIONALITY
   &__checkbox:checked ~ &__background {
-    transform: translateX(-30rem) scale(20, 1);
+    transform: translateX(-21rem) scale(20, 1);
   }
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;
-    width: 60rem;
+    width: 40rem;
   }
 
   &__checkbox:checked + &__button &__icon {
@@ -136,49 +134,3 @@
     top: 1rem;
   }
 }
-
-// .main-navigation {
-//   display: inline-block;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   font-size: 1.8rem;
-//   z-index: 5;
-
-//   .main-navigation__list {
-//     display: inline-block;
-//     border: .2rem;
-//     padding: 1rem 0 1rem 0;
-//     letter-spacing: .1rem;
-//     background-color: $primary-color-dark;
-//     color: $color-black;
-
-//     [class*="__list--"] {
-//       padding: 1rem;
-//       transition: background-color 200ms linear, color 250ms linear;
-
-//       &:link
-//       ,:visited {
-//         text-transform: uppercase;
-//         text-decoration: none;
-//         color: $color-black;
-
-//       }
-
-//       &:hover {
-//         background-color: $color-black;
-//         color: $color-white;
-//       }
-
-//     }
-//   }
-//   #js-main-navigation__pull-out {
-//     display: inline-block;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     font-size: 1.8rem;
-//     z-index: 1;
-//   }
-
-// }
