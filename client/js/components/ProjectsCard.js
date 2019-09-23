@@ -45,15 +45,9 @@ class ProjectCard extends Component {
                   if (pic.id === state.selectedImageId) {
                     style.backgroundImage = `url(${pic.url})`;
                     style.zIndex = 1;
-                    style.boxShadow = '8px 9px 11px -1px #2121217a';
                   } else {
                     style.backgroundImage = `linear-gradient(#7c9daf85, #46555e85), url(${pic.url})`;
                   } 
-                  style[':hover'] = {
-                    backgroundImage: `url(${pic.url})`,
-                    zIndex: 1,
-                    boxShadow: '8px 9px 11px -1px #2121217a'
-                  }
 
                   return (
                     <div key={pic.id}
@@ -86,7 +80,7 @@ class ProjectCard extends Component {
                       <li key={state.projects[projectId].name + state.projects[projectId].id}
                         value={projectId}
                         style={state.projects[projectId].id === state.selectedProject.id
-                          ? { backgroundColor: '#212121', color: '#fffcd2' }
+                          ? {color: '#387497' }
                           : null}
                         alt={state.projects[projectId].name}
                         onClick={
