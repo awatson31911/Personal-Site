@@ -35,15 +35,15 @@ export default class App extends Component {
         <NavBar />
         <Header />
         
-        <section id="about">
+        <section id="section-about">
           <About  />
         </section>
 
-        <section id="projects">
+        <section id="section-projects">
           <ProjectCard projects={this.state.projects} selectedProject={this.state.selectedProject} />
         </section>
         
-        <section id="contact-form">
+        <section id="section-contact">
           <ContactForm />
         </section>
         

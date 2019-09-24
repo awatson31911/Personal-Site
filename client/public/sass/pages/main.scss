@@ -1,0 +1,19 @@
+#section-contact {
+  padding: 15rem;
+  background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
+}
+
+.contact {
+  background-image: linear-gradient(105deg, rgba($color-white, 0.65) 0%, rgba($color-white, 0.65) 50%, transparent 50%),
+    url("../img/dorian-mongel-554993-unsplash.jpg");
+  background-size: 100%;
+  background-position: bottom;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 1.5);
+  height: 50rem;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}
