@@ -1,9 +1,16 @@
+#section-projects {
+  border-top-style: solid;
+  border-top-width: thick;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+}
+
 #section-contact {
   padding: 15rem;
-  background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
 }
 
 .contact {
+  display:flex;
   background-image: linear-gradient(105deg, rgba($color-white, 0.65) 0%, rgba($color-white, 0.65) 50%, transparent 50%),
     url("../img/dorian-mongel-554993-unsplash.jpg");
   background-size: 100%;
@@ -11,9 +18,20 @@
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 1.5);
   height: 50rem;
+  text-align: center;
 
-  &__form {
+  &__text {
     width: 50%;
     padding: 6rem;
+    margin: auto 0;
+    color: #343c59;
+    font-size: 2rem;
+    letter-spacing: 2px;
   }
+
+  &__btn-container {
+    width: 50%;
+    margin: auto 0;
+  }
+  
 }

@@ -8,14 +8,10 @@ html{
 }
 
 body {
-  padding: 2% 4%;
+  padding: 2% 4% 0 4%;
 }
 
 section {
   height: 100vh;
-  padding: 4rem 0;
-  // &:not(:last-child) {
-  //   padding-top: 10rem;
-  //   padding-left: 10rem;
-  // }
+  padding: 6rem 0;
 }

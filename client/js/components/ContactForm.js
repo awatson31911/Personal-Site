@@ -26,7 +26,7 @@ const ContactForm = () => {
           </div>
 
           <div className="form__group">
-            <button className="btn btn--pink">Get in touch &rarr;</button>
+            <button className="btn">Get in touch &rarr;</button>
           </div>
         </form>
       </div>

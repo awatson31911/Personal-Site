@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import Header from './Header';
 import ProjectCard from './ProjectsCard';
 import About from './About';
-import ContactForm from './ContactForm';
+import Contact from './Contact';
 // import SkillsCard from './SkillsCard';
 // import VideoBG from './VideoBG';
 // import SideNavigation from './SideNavigation';
@@ -44,7 +44,7 @@ export default class App extends Component {
         </section>
         
         <section id="section-contact">
-          <ContactForm />
+          <Contact />
         </section>
         
         {/* <SideNavigation /> */}
