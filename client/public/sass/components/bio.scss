@@ -5,13 +5,15 @@
 
   &__content {
     height: 23%;
-    width: 70%;
-    background-color: #387497;
+    width: 65%;
+    background-color: rgba(25, 34, 66, 0.88);;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #bcdff3;
-    border-radius: 17%;
+    border-radius: 14%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
   }
 
   &__img {
@@ -26,14 +28,14 @@
   }
 
   &__text {
-    width: 70rem;
-    font-size: 1.8rem;
+    width: 45rem;
 
     a:link, 
     a:active,
     a:visited {
       text-decoration: none;
       color: #ff7e99;
+      transition: all .3s;
     }
     a:hover{
       color: #ffabbc;
@@ -45,7 +47,7 @@
   height: 47%;
 
   &__heading {
-    margin-top: 8rem;
+    margin-top: 4rem;
     font-weight: 300;
   }
 
@@ -55,7 +57,7 @@
   }
 
   &__card {
-    height: 24rem;
+    height: 20;
     width: 20rem;
     display: flex;
     flex-direction: column;
@@ -69,7 +71,7 @@
       color: $primary-color-dark;
       
       & .stack__icon {
-        fill: #fff8d6;
+        fill: #ff7e99;
       }
       
       & .stack__icon-box {
@@ -105,8 +107,9 @@
   width: 47%;
   position: absolute;
   right: 0;
+  bottom:0;
   border-radius: 36%;
-  background-color: #387497;
+  background-color: rgba(25, 34, 66, 0.88);;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -114,8 +117,11 @@
   color: #bcdff3;
   font-weight: 300;
 
+  h1 {
+    font-weight: 300;
+  }
   &__item-container {
-    width: 85%;
+    width: 90%;
     margin-top: -5rem;
   }
 
