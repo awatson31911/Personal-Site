@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SocialBox from './SocialBox';
 
 const Header = () => {
 
@@ -21,6 +22,8 @@ const Header = () => {
         <br/>
         <p className="header-primary__info">Software Engineer</p>
         <p className="header-primary__info">NYC</p>
+
+        <SocialBox />
       </div>
 
       <div className="header__icon-box">
