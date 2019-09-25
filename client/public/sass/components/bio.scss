@@ -36,9 +36,11 @@
       color: #ff7e99;
       transition: all .3s;
     }
+
     a:hover{
       color: #ffabbc;
     }
+
   }
 }
 
@@ -98,7 +100,14 @@
   
   &__text {
     padding-top: 3rem;
+
+    &--big {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    
   }
+
 }
 
 .tech {

@@ -15,6 +15,7 @@
     url("../img/dorian-mongel-554993-unsplash.jpg");
   background-size: 100%;
   background-position: bottom;
+  background-repeat: no-repeat;
   border-radius: 3px;
   box-shadow: 8px 13px 2rem 0px rgba(33, 33, 33, 0.15);
   height: 50rem;
@@ -27,13 +28,17 @@
     margin: auto 0;
     color: #343c59;
     font-size: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 
   &__btn-container {
-    width: 50%;
+    width: 40%;
     margin: auto 0;
-    background-color: #343c59;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #343c59f0;
+    margin-right: 39px;
   }
   
   &__heading {
@@ -41,5 +46,7 @@
     background-color: #c97e7e;
     padding: 3px;
   }
+
+  @include responsive()
     
 }

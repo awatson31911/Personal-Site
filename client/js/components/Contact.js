@@ -7,7 +7,7 @@ const ContactForm = () => {
     <div className="contact">
 
       <div className="contact__text">
-        I am currently in the market for Full-Time work as either an engineer/developer or client-facing, technial contact. I&apos;m also always open to freelance opportunities, interesting projects or just a friendly &apos;How do you do?&apos;
+        If anything on my page piqued your interest, let&apos;s connect! I&apos;m currently looking for Full-Time work as either an engineer/developer or client-facing, technical contact. I&apos;m also always open to freelance opportunities, interesting projects or just a friendly &apos;How do you do?&apos;
       </div>
 
       <div className="contact__btn-container">

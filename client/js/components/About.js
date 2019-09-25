@@ -27,7 +27,7 @@ const About = () => {
               </svg>
             </div>
             <div className="stack__text">
-              <b>P.</b>ostgreSQL database for storage
+              <span className="stack__text--big">P</span>ostgreSQL database for storage
             </div>
           </div>
           <div className="stack__card">
@@ -38,7 +38,7 @@ const About = () => {
 
             </div>
             <div className="stack__text">
-              <b>E.</b>xpress.js framework for server creation and routing
+            <span className="stack__text--big">E</span>xpress.js framework for server creation and routing
             </div>
           </div>
           <div className="stack__card">
@@ -49,7 +49,7 @@ const About = () => {
 
             </div>
             <div className="stack__text">
-              <b>R.</b>eact.js library for rendering user interfaces to the DOM
+            <span className="stack__text--big">R</span>eact.js library for rendering user interfaces to the DOM
             </div>
 
           </div>
@@ -60,7 +60,7 @@ const About = () => {
               </svg>
             </div>
             <div className="stack__text">
-              <b>N.</b>ode.js runtime environment to execute the code
+            <span className="stack__text--big">N</span>ode.js runtime environment to execute the code
             </div>
           </div>
         </div>
@@ -74,25 +74,25 @@ const About = () => {
             <img src="../../public/img/jquery_logo.png" alt="jQuery Logo" />
           </div>
           <div className="tech__item">
-            <img src="../../public/img/html_logo.png" alt="jQuery Logo" />
+            <img src="../../public/img/html_logo.png" alt="HTML5 Logo" />
           </div>
           <div className="tech__item">
-            <img src="../../public/img/css_logo.png" alt="jQuery Logo" />
+            <img src="../../public/img/css_logo.png" alt="CSS3 Logo" />
           </div>
           <div className="tech__item">
-            <img src="../../public/img/mssql_logo.png" alt="jQuery Logo" />
+            <img src="../../public/img/mssql_logo.png" alt="MS SQL Logo" />
           </div>
           <div className="tech__item">
-            <img src="../../public/img/expo_logo.png" alt="jQuery Logo" />
+            <img src="../../public/img/expo_logo.png" alt="Expo Logo" />
           </div>
           <div className="tech__item">
-            <img src="../../public/img/react-native_logo.png" alt="jQuery Logo" />
+            <img src="../../public/img/react-native_logo.png" alt="React-Native Logo" />
           </div>
           <div className="tech__item">
-            <img src="../../public/img/webpack_logo.png" alt="jQuery Logo" />
+            <img src="../../public/img/webpack_logo.png" alt="Webpack Logo" />
           </div>
           <div className="tech__item">
-            <img src="../../public/img/redux_logo.png" alt="jQuery Logo" />
+            <img src="../../public/img/redux_logo.png" alt="Redux Logo" />
           </div>
 
         </div>
