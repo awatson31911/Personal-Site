@@ -72,7 +72,7 @@
     }
   }
 
-  //FUNCIONALITY
+  /*FUNCIONALITY*/
   &__checkbox:checked ~ &__background {
     transform: translateX(-21rem) scale(20, 1);
   }
@@ -96,7 +96,7 @@
     transform: rotate(-135deg);
   }
 
-  //ICON
+  /*ICON*/
   &__icon {
     position: relative;
     margin-top: 3.3rem;
