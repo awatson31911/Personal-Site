@@ -26,11 +26,11 @@ const Header = () => {
         <SocialBox />
       </div>
 
-      <div className="header__icon-box">
+      <a href="#section-about" className="header__icon-box">
         <svg className="header__icon">
           <use xlinkHref="../../public/img/sprite.svg#icon-chevron-thin-down"></use>
         </svg>
-      </div>
+      </a>
 
     </header>
   )

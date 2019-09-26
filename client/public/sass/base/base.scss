@@ -3,25 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 
+  
   @include responsive(tab-land) {
     font-size: 56.25%;
   }
-
+  
   @include responsive(tab-port) {
     font-size: 50%;
   }
-
+  
   @include responsive(big-desktop) {
     font-size: 75%;
   }
-
+  
 }
 
 body {
   padding: 2% 4% 0 4%;
+  
+  @include responsive(tab-land) {
+    padding: 0;
+  }
+
 }
 
 section {

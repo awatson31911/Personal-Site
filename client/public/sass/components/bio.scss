@@ -13,22 +13,31 @@
     border-radius: 14%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-  }
 
+    @include responsive(phone) {
+      height: 30%;
+      width: 95%;
+    }
+
+  }
+  
   &__img {
     background-image: url("../img/bio-pic.jpg");
     height: 100%;
     width: 17rem;
     background-size: cover;
-    position: relative;
+    background-position: center;
     border-radius: 50%;
-    transition: 0.5s;
-
+    
+    @include responsive(phone) {
+      width: 46rem;
+      margin-right: 1rem
+    }
   }
-
+  
   &__text {
     width: 45rem;
-
+    
     a:link, 
     a:active,
     a:visited {
@@ -40,23 +49,36 @@
     a:hover{
       color: #ffabbc;
     }
-
+    
+    @include responsive(phone) {
+     font-size: 2.4rem;
+    }
+    
   }
 }
 
 .stack {
   height: 47%;
-
+  
+  @include responsive(phone) {
+    height: 30%;
+    margin-top: 20rem;
+  }
+  
   &__heading {
     margin-top: 4rem;
     font-weight: 300;
-  }
 
+    @include responsive(phone) {
+      font-size: 4rem;
+    }
+  }
+  
   &__card-container {
     display: flex;
     justify-content: space-evenly;
   }
-
+  
   &__card {
     height: 20;
     width: 20rem;
