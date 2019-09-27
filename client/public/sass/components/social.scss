@@ -1,25 +1,22 @@
 .social-box {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  width: 15rem;
 
   &__icon-box {
-    margin-right: 15px;
     margin-top: 3px;
 
     &:hover {
-
       & .social-box__icon {
         fill: #c97e7e;
       }
     }
-
   }
-  
+
   &__icon {
     fill: $color-black;
     height: 2.4rem;
     width: 2.4rem;
     transition: 0.5s;
   }
-
 }

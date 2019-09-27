@@ -8,6 +8,7 @@
     padding: 13rem 0;
     border-style: none;
   }
+
 }
 
 #section-contact {
@@ -16,6 +17,7 @@
   @include respond(tab-port) {
     padding: 0;
   }
+
 }
 
 .contact {
@@ -45,6 +47,8 @@
     
     @include respond(phone) {
       font-size: 1rem;
+    }
+
   }
 
   &__btn-container {

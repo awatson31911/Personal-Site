@@ -16,14 +16,16 @@ const Header = () => {
 
       <div className="header-primary">
         <h1 className="header-primary__heading">Hello, I&apos;m</h1>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h1 className="header-primary__name">Anthony Watson</h1>
-        <br/>
+        <br />
         <p className="header-primary__info">Software Engineer</p>
         <p className="header-primary__info">NYC</p>
 
-        <SocialBox />
+        <div className="header-primary__social">
+          <SocialBox />
+        </div>
       </div>
 
       <a href="#section-about" className="header__icon-box">
