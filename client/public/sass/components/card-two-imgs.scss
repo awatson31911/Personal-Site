@@ -7,6 +7,11 @@
     height: 6rem;
     background-color: #343c59;
     color: #bcdff3;
+
+    @include respond(phone) {
+      padding: 2% 5% 10% 5%;
+    }
+
   }
 
   &__img-box {
@@ -56,18 +61,13 @@
       flex-direction: column;
       font-size: 2.4rem;
       justify-content: space-around;
-      align-items: center;
+      text-align: center;
       background-color: #343c59;
     }
 
     li {
       cursor: pointer;
-      height: 10rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       transition: 200ms linear;
-      width: 30rem;
       color: #ffabbc;
 
       &:hover {
