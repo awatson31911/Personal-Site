@@ -2,6 +2,11 @@
   height: 96vh;
   position: relative;
 
+  @include respond(phone) {
+    height: 30rem;
+    width: 15rem;
+  }
+
   .bg-video {
     position: absolute;
     top: 0;
@@ -71,7 +76,7 @@
     }
 
     &__social {
-      align-self: right;
+      align-self: flex-end;
     }
   }
 }

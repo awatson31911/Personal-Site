@@ -10,7 +10,7 @@ class ProjectCard extends Component {
     this.state = {
       projects,
       selectedProject,
-      selectedImageId: selectedProject.pics[1].id
+      selectedImageId: selectedProject.pics[0].id
     }
   }
 
@@ -87,7 +87,7 @@ class ProjectCard extends Component {
                           (e) => {
                             this.setState({
                               selectedProject: state.projects[e.target.value],
-                              selectedImageId: state.projects[e.target.value].pics[1].id
+                              selectedImageId: state.projects[e.target.value].pics[0].id
                             })
                           }
                         }>
