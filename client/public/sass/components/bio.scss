@@ -22,6 +22,10 @@
       border-bottom-right-radius: 23%;
     }
     
+    @include respond(phone){
+      height: 14rem;
+    }
+
   }
   
   &__img {
@@ -31,6 +35,8 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+
+
   }
   
   &__text {

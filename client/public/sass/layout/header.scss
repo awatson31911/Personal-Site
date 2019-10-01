@@ -2,11 +2,7 @@
   height: 96vh;
   position: relative;
 
-  @include respond(phone) {
-    height: 30rem;
-    width: 15rem;
-  }
-
+  
   .bg-video {
     position: absolute;
     top: 0;
@@ -14,7 +10,7 @@
     height: 100%;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 73%);
-
+    
     &__content {
       height: 100%;
       width: 100%;
@@ -22,7 +18,7 @@
       opacity: 0.5;
     }
   }
-
+  
   &__icon-box {
     height: 9rem;
     width: 18rem;
@@ -31,12 +27,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
+  
   &__icon {
     height: 8rem;
     width: 18rem;
   }
-
+  
   .header-primary {
     width: 40rem;
     height: 20rem;
@@ -51,6 +47,11 @@
     box-shadow: 3px 5px 8px 0px #07070761;
     background-color: #f1e8e8;
     border-radius: 4px;
+    
+    @include respond(phone) {
+      height: 15rem;
+      width: 30rem;
+    }
 
     &__heading {
       background-color: $primary-color;
@@ -78,5 +79,7 @@
     &__social {
       align-self: flex-end;
     }
+
   }
+
 }
