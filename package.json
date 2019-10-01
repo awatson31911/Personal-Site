@@ -4,6 +4,7 @@
   "description": "An elegantly designed personal site to host projects and misison statement",
   "main": "server/index.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "webpack -w & nodemon --watch server -e js,html,scss",
     "heroku-postbuild": "webpack -p"
   },
