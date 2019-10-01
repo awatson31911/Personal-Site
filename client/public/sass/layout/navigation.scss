@@ -13,8 +13,19 @@
     right: 7rem;
     z-index: 200;
     text-align: center;
-  }
+    box-shadow: 1px 2px 5px 0px #212121;
 
+    @include respond(tab-land) {
+      top: 3rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+  
   &__background {
     height: 4rem;
     width: 2rem;
@@ -22,10 +33,20 @@
     top: 5.5rem;
     right: 9rem;
     z-index: 100;
-    transition: 0.3s cubic-bezier(0.38, 0.05, 0.48, 0.81);;
+    transition: 0.3s cubic-bezier(0.38, 0.05, 0.48, 0.81);
     background-color: #212121;
-  }
+    
+    @include respond(tab-land) {
+      top: 3.5rem;
+      right: 6rem;
+    }
 
+    @include respond(phone) {
+      top: 1.5rem;
+      right: 3rem;
+    }
+  }
+  
   &__nav {
     height: 6rem;
     position: fixed;
@@ -33,11 +54,22 @@
     right: 11rem;
     z-index: 150;
     list-style: none;
+    font-size: 0px;
     opacity: 0;
     width: 0;
-    transition: 0.5s;
-  }
+    transition: all 0.5s;
+    
+    @include respond(tab-land) {
+      top: 2.5rem;
+      right: 7rem;
+    }
 
+    @include respond(phone) {
+      top: .5rem;
+      right: 5rem;
+    }
+  }
+  
   &__list {
     position: absolute;
     top: 50%;
@@ -47,15 +79,10 @@
     display: flex;
   }
 
-  &__item {
-    margin: 0 1rem;
-  }
-
   &__link {
     &:link,
     &:visited {
       display: inline-block;
-      padding: 0 2rem;
       color: #bcdff3;
       text-decoration: none;
       text-transform: uppercase;
@@ -73,19 +100,37 @@
   }
 
   /*FUNCIONALITY*/
-  &__checkbox:checked ~ &__background {
-    transform: translateX(-21rem) scale(20, 1);
-  }
-
+  
   &__checkbox:checked ~ &__nav {
     opacity: 1;
-    width: 40rem;
+    transform: translateX(-21rem) scale(1, 1);
+    font-size: inherit;
+    
+    @include respond(phone) {
+      transform: translateX(-15rem) scale(1, 1);
+    }
+  }
+  
+  &__checkbox:checked ~ &__nav &__item {
+    margin: 0 1rem;
+  }
+  
+  &__checkbox:checked ~ &__nav &__link {
+    padding: 0 2rem;
   }
 
+  &__checkbox:checked ~ &__background {
+    transform: translateX(-21rem) scale(20, 1);
+
+    @include respond(phone) {
+      transform: translateX(-15rem) scale(15, 1);
+    }
+  } 
+  
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;
   }
-
+  
   &__checkbox:checked + &__button &__icon::before {
     top: 0;
     transform: rotate(135deg);
