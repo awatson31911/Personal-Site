@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 const express = require('express');
 const app = express(); // Creates an instance of express application
 const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 /* ------------------------------ Middleware ------------------------------------------- */
 
@@ -39,13 +39,13 @@ app.use(function(err, req ,res, next) {
 })
 
 /* ------------------------------ ~ Start Server ~ ------------------------------------------- */
-app.listen(port, function() {
-  console.log("Knock, Knock");
+app.listen(PORT, function() {
+  console.log('Knock, Knock');
   setTimeout(function() {
-    console.log("Who's there?")
+    console.log('Who\'s there?')
   }, 1000);
   setTimeout(function() {
     console.log(`...We're
-    listening (port:3000).... `)
+    listening (port:${PORT}).... `)
   }, 3000);
 })
