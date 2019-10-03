@@ -79,7 +79,7 @@ class ProjectCard extends Component {
                 Object.keys(state.projects).map((projectId) => {
                   return (
                     <li key={state.projects[projectId].name + state.projects[projectId].id} className="card-two-imgs__item">
-                      <span className="card-two-imgs__item-text"
+                      <a className="card-two-imgs__item-text"
                         value={projectId}
                         alt={state.projects[projectId].name}
                         style={state.projects[projectId].id === state.selectedProject.id
@@ -87,14 +87,15 @@ class ProjectCard extends Component {
                           : null}
                         onClick={
                           (e) => {
-                            console.log(e, e.target)
+                            e.preventDefault();
+                            console.log('the target ---->', e.target, 'the value--->', e.target.getAttribute('value'), 'the current Target--->', e.currentTarget, 'current value--->', e.currentTarget.getAttribute('value'))
                             this.setState({
-                              selectedProject: state.projects[e.target.value],
-                              selectedImageId: state.projects[e.target.value].pics[0].id
+                              selectedProject: state.projects[e.target.getAttribute('value')],
+                              selectedImageId: state.projects[e.target.getAttribute('value')].pics[0].id
                             })
-                          }}>{state.projects[projectId].name}</span>
+                          }}>{state.projects[projectId].name}</a>
                       <div className="card-two-imgs__item-links">
-                        <ProjectLinks link={state.projects[projectId].codeLink} gitHub={state.projects[projectId].liveLink} />
+                        <ProjectLinks link={state.projects[projectId].liveLink} gitHub={state.projects[projectId].codeLink} />
                       </div>
                     </li>
                   )

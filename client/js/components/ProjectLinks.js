@@ -2,8 +2,7 @@ import React from 'react';
 
 const ProjectLinks = ({ fill, hover, link, gitHub }) => {
   
-  let deployedIcon;
-
+  let deployedIcon = null;
   if (link) {
     deployedIcon = (
       <a href={link} className="project-links__icon-box" target="_newtab" alt="Project link">
