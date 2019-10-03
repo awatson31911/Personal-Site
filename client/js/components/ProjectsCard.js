@@ -78,7 +78,7 @@ class ProjectCard extends Component {
               {
                 Object.keys(state.projects).map((projectId) => {
                   return (
-                    <li key={state.projects[projectId].name + state.projects[projectId].id}>
+                    <li key={state.projects[projectId].name + state.projects[projectId].id} className="card-two-imgs__item">
                       <span className="card-two-imgs__item-text"
                         value={projectId}
                         alt={state.projects[projectId].name}
@@ -87,13 +87,14 @@ class ProjectCard extends Component {
                           : null}
                         onClick={
                           (e) => {
+                            console.log(e, e.target)
                             this.setState({
                               selectedProject: state.projects[e.target.value],
                               selectedImageId: state.projects[e.target.value].pics[0].id
                             })
                           }}>{state.projects[projectId].name}</span>
                       <div className="card-two-imgs__item-links">
-                        <ProjectLinks />
+                        <ProjectLinks link={state.projects[projectId].codeLink} gitHub={state.projects[projectId].liveLink} />
                       </div>
                     </li>
                   )

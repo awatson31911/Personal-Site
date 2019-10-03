@@ -1,0 +1,22 @@
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 9rem;
+
+  &__icon-box {
+    margin-top: 3px;
+
+    &:hover {
+      & .project-links__icon {
+        fill: #f9e1e1;;
+      }
+    }
+  }
+
+  &__icon {
+    fill: #ff7e99;;
+    height: 2.4rem;
+    width: 2.4rem;
+    transition: 0.5s;
+  }
+}
