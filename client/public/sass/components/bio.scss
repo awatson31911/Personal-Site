@@ -82,6 +82,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 4rem;
+    border-radius: 3px;
     transition: 0.5s;
 
     @include respond(phone) {

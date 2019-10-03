@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import Radium from 'radium';
 import PropTypes from 'prop-types';
+import ProjectLinks from './ProjectLinks';
 
 
 class ProjectCard extends Component {
@@ -47,7 +48,7 @@ class ProjectCard extends Component {
                     style.zIndex = 1;
                   } else {
                     style.backgroundImage = `linear-gradient(#7c9daf85, #46555e85), url(${pic.url})`;
-                  } 
+                  }
 
                   return (
                     <div key={pic.id}
@@ -71,33 +72,35 @@ class ProjectCard extends Component {
           </div>
 
           <div className="col-1-of-4">
-            <div className="card-two-imgs__list">
+            {/* <div > */}
 
-              <ul>
-                {
-                  Object.keys(state.projects).map((projectId) => {
-                    return (
-                      <li key={state.projects[projectId].name + state.projects[projectId].id}
+            <ul className="card-two-imgs__list">
+              {
+                Object.keys(state.projects).map((projectId) => {
+                  return (
+                    <li key={state.projects[projectId].name + state.projects[projectId].id}>
+                      <span className="card-two-imgs__item-text"
                         value={projectId}
-                        style={state.projects[projectId].id === state.selectedProject.id
-                          ? {color: '#387497' }
-                          : null}
                         alt={state.projects[projectId].name}
+                        style={state.projects[projectId].id === state.selectedProject.id
+                          ? { color: '#387497' }
+                          : null}
                         onClick={
                           (e) => {
                             this.setState({
                               selectedProject: state.projects[e.target.value],
                               selectedImageId: state.projects[e.target.value].pics[0].id
                             })
-                          }
-                        }>
-                        {state.projects[projectId].name}
-                      </li>
-                    )
-                  })
-                }
-              </ul>
-            </div>
+                          }}>{state.projects[projectId].name}</span>
+                      <div className="card-two-imgs__item-links">
+                        <ProjectLinks />
+                      </div>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+            {/* </div> */}
           </div>
 
         </div >

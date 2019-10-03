@@ -120,7 +120,7 @@ const sabers = {
   description: 'A mobile-ready, interactive web application that uses the Star Wars API to display popular characters and the films they appear in.',
   skills: ['HTML', 'CSS', 'Javascript', 'Bootstrap', 'Webpack', 'node'],
   codeLink: 'https://github.com/awatson31911/sabers-on-servers',
-  liveLink: 'sabers-on-servers.herokuapp.com',
+  liveLink: 'https://sabers-on-servers.herokuapp.com',
   pics: [{id: 1, url: '../public/img/sabers-3.gif'}, {id: 0, url: '../public/img/sabers-1.jpg'}, {id: 2, url: '../public/img/sabers-2.jpg'} ]
 }
 
