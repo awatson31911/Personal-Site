@@ -1,6 +1,19 @@
 import React from 'react';
 
-const ProjectLinks = ({fill, hover, link, gitHub}) => {
+const ProjectLinks = ({ fill, hover, link, gitHub }) => {
+  
+  let deployedIcon;
+
+  if (link) {
+    deployedIcon = (
+      <a href={link} className="project-links__icon-box" target="_newtab" alt="Project link">
+        <svg className="project-links__icon">
+          <use xlinkHref="../../public/img/sprite.svg#icon-browser"></use>
+        </svg>
+      </a>
+    )
+  }
+
   return (
 
     <div className="project-links">
@@ -11,11 +24,7 @@ const ProjectLinks = ({fill, hover, link, gitHub}) => {
         </svg>
       </a>
 
-      <a href={link} className="project-links__icon-box" target="_newtab" alt="Project link">
-        <svg className="project-links__icon">
-          <use xlinkHref="../../public/img/sprite.svg#icon-browser"></use>
-        </svg>
-      </a>
+      {deployedIcon}
 
     </div >
   )

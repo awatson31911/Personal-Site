@@ -91,6 +91,7 @@ const scribblingShrink = {
   description: 'A WordPress blog site to host poems',
   skills: ['HTML', 'CSS', 'Javascript', 'Wordpress'],
   codeLink: 'https://github.com/awatson31911/scribbling-shrink',
+  liveLink: null,
   pics: [{id: 1, url: '../public/img/scribb-shrink-3.gif'}, {id: 0, url: '../public/img/scribb-shrink-1.png'}, {id: 2, url: '../public/img/scribb-shrink-2.png'}]
 }
 
