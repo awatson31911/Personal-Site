@@ -36,6 +36,10 @@
     transition: 200ms linear;
     cursor: pointer;
 
+    @include respond(tab-port) {
+      height: 28rem;
+    }
+
     @include respond(phone) {
       height: 13rem;
     }
@@ -114,6 +118,10 @@
 
   &__item-links {
     width: 9rem;
+
+    @include respond(phone) {
+      width: 5rem;
+    }
   }
 
   br {
