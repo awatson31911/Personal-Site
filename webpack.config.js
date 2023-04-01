@@ -1,8 +1,11 @@
-var path = require('path')
+const path = require('path')
+const ESLintPlugin = require('eslint-webpack-plugin');
+
 
 module.exports = {
   devtool: 'source-map',
   entry: './client/js/main.js',
+  plugins: [new ESLintPlugin()],
   output: {
     path: path.join(__dirname, 'dist'),
     //publicPath: '/client/public',
@@ -13,16 +16,16 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: ['babel-loader', 'eslint-loader']
-
+        use: 'babel-loader'
       },
       {
-        test: /\.css?|\.scss$/,
-        loader: ['style-loader', 'css-loader', 'sass-loader']
+        test: /\.scss$/,
+        use: ['style-loader','css-loader','sass-loader'],
+        exclude: /(node_modules|bower_components)/,
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader'
+        use: 'url-loader'
       }
     ],
   },
