@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/awatson31911/Personal-Site/issues"
   },
-  "homepage": "https://github.com/awatson31911/Personal-Site#readme",
+  "homepage": "https://awatson31911.github.io/Personal-Site/",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
@@ -33,6 +33,7 @@
     "eslint-plugin-react": "^7.11.1",
     "eslint-webpack-plugin": "^4.0.0",
     "file-loader": "^2.0.0",
+    "gh-pages": "^5.0.0",
     "sass": "^1.60.0",
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
