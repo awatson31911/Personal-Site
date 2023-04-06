@@ -5,8 +5,7 @@ const About = () => {
     <div className="bio">
 
       <div className="bio__content">
-        <div className="bio__img">
-        </div>
+        <img className="bio__img" src="../../public/img/bio-pic.jpg" alt="Tony's Bio picture" />
         <div className="bio__text">
           <p>
             Hello, my name is Tony! I&apos;m a full stack engineer based in New York City, NY, with a passion for building things to solve problems and empowering people through tech. Most recently, I deployed a package to NPM called <a href="https://www.npmjs.com/package/module-cleaner" target="_newtab">module-cleaner</a> (aka Filtch) which recursively removes all of the unwanted <b>node_modules</b> folders from a given project directory

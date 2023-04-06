@@ -8,7 +8,6 @@ module.exports = {
   plugins: [new ESLintPlugin()],
   output: {
     path: path.join(__dirname, 'dist'),
-    //publicPath: '/client/public',
     filename: 'bundle.js'
   },
   module: {

@@ -46,19 +46,6 @@ export default class App extends Component {
         <section id="section-contact">
           <Contact />
         </section>
-        
-        {/* <SideNavigation /> */}
-        
-        {/* <section id="skills" style={{
-          backgroundImage: 'linear-gradient(to bottom right,#bcdff3, #7c9daf, transparent), url(../public/img/dorian-mongel-554993-unsplash.jpg)'
-        }}>
-          <SkillsCard skills={this.state.skills} selectedSkill={this.state.selectedSkill}/>
-        </section> */}
-
-        {/* <section id="playground">
-          <VideoBG />
-        </section> */}
-
       </div>
     )
   }
