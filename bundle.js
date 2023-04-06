@@ -24932,7 +24932,7 @@ module.exports = styleTagTransform;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "87e0a8979aaf018b787b.jpg";
+module.exports = __webpack_require__.p + "ca1a13dec255c0fa3837.jpg";
 
 /***/ })
 
